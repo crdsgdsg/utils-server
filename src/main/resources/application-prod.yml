@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /utils
+spring:
+  jackson:
+    #  格式化返回时间 yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://localhost:3306/utils?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 146Foreverlove
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  config: classpath:log4j2.xml
+
+

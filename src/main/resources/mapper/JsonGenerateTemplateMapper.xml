@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.shyforrd.utilsserver.mapper.JsonGenerateTemplateMapper">
+
+    <resultMap id="BaseResultMap" type="top.shyforrd.utilsserver.entity.JsonGenerateTemplate">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="key" column="key" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="condition" column="condition" jdbcType="VARCHAR"/>
+            <result property="parentId" column="parent_id" jdbcType="INTEGER"/>
+            <result property="number" column="number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,key,type,
+        condition,parent_id,number
+    </sql>
+</mapper>
